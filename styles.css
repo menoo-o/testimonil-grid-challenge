@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barlow+Semi+Condensed:wght@500;600&family=Dosis:wght@400;700&family=Freckle+Face&family=Karla&family=Lato&family=Mooli&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+body{
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Light-grayish-blue);
+}
+
+/* Colors */
+:root{
+     /* primary */
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-darkgrayishblue: hsl(217, 19%, 35%);
+    --Very-darkblackishblue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    /* neutral */
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+/* //////////////////////////////////////////////////////// */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.box1{
+    background-color: var(--Moderate-violet);
+    padding: 1.1rem;
+    width: 25rem;
+    height: auto;
+    
+
+}
+
+.box2{
+    background-color: var(--Very-darkgrayishblue);
+    padding: 1.1rem;
+    width: 25rem;
+    height: auto;
+}
+
+.box3{
+    background-color: var(--Light-gray);
+    padding: 1.1rem;
+    width: 25rem;
+    height: auto;
+}
+
+.box4{
+    background-color: var(--Very-darkblackishblue) ;
+    padding: 1.1rem;
+    height: auto;
+    width: 25rem;
+}
+
+.box5{
+    background-color: var(--Light-gray);
+    padding: 1.1rem;  
+    width: 25rem;
+    height: auto;
+}
+
+
+/* shared css properties */
+.pic-name{
+    display: flex;
+    margin-left: 1.1rem;
+}
+
+img{
+    display: block;
+    border-radius: 50%;
+}
+
+.pic-para{
+    margin-left: 1.2rem;
+    padding-top: 1.1rem;
+    color: white;
+    font-size: 1.58rem;
+}
+
+.pic-para .p2{
+    color:var(--Light-gray);
+    font-size: 0.9rem;
+}
+
+h3{
+    color: white;
+    padding: 1.1rem;
+    font-size: 1.58rem;
+    line-height: 2.1rem;
+}
+
+h4{
+    color: var(--Light-gray);
+    padding: 1.1rem;
+    line-height: 1.3rem;
+}
+
+.box1, .box2, .box3, .box4, .box5{
+    border-radius: 2%;
+    margin-bottom: 1.5rem;
+}
+
+.box5 .pic-para, .box3 .pic-para{
+    color: var(--Very-darkblackishblue);
+}
+
+.box5 .p2, .box3 .p2{
+    color: var(--Very-darkgrayishblue)
+}
+
+.box5 h3, .box3 h3{
+    color: var(--Very-darkblackishblue) ;
+    
+    
+
+}
+
+.box5 h4, .box3 h4{
+    color: var(--Very-darkgrayishblue) ;
+    
+}
+
+
+@media screen and (min-width:1500px) {
+
+    .container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 92vh;
+        padding-top: 1.7rem;
+    }
+
+    .left-top{
+        display: flex;  
+    }
+    .left-bottom{
+        display: flex;
+    }
+    .box1, .box4{
+        width: 580px; height: 320px;
+        margin-right: 2rem;
+    }
+    .box2, .box3{
+        width: 18vw;   
+    }
+
+/* individual designs */
+    .box5{
+        width: 14vw; height: 41vw;
+    }
+
+    .box3{
+        margin-right: 2.5rem;
+    }
+     
+  
+}
